@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 1545px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+p{
+    font-family: "Catamaran", sans-serif;
+}
+
+/* 1er contenedor - SALE */
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 600px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+  /* linea negra */
+
+#header .blackline{
+    width: 80px;
+    height: 6px;
+    background-color: black;
+    border-radius: 4px / 50%;
+    margin: 20px auto;
+}
+
+  /* END OF SEASON */
+
+#header p:first-of-type{
+    font-size: clamp(8px, 3vw, 24px);
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+  /* SALE - span */
+
+#header h1 span{
+    font-size: clamp(40px, 10vw, 135px);
+    color: #b88940;
+    font-family: "Ruda", sans-serif;
+    font-weight: 900;
+    letter-spacing: 8px;
+}
+
+  /* SALE - h1 */
+
+#header h1{
+    margin: 0px;
+}
+
+  /* 50 % OFF */
+#header p:nth-of-type(2){
+    font-size: clamp(8px, 5vw, 65px);
+    font-weight: 900;
+    font-family: "Ruda", sans-serif;
+}
+
+  /* lorem */
+
+#header p:nth-of-type(3){
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(16px, 3vw, 28px);
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+  /* Contenedor de todas las imagenes */
+
+#imgcontent{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: -1;
+    /* Responsive */
+    @media (max-width:1024px){
+    margin: 0 auto;
+    }
+}
+
+  /* Contenedor de las lineas amarillas de fondo */
+
+#yellowcontentline{
+    margin-bottom: 5%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    z-index: -1;
+    max-width: 1545px;
+    width: 95%;
+    align-items: center;
+    /* Responsive */
+    @media (max-width: 1024px) {
+    gap: 55px;
+    }
+    @media (max-width: 640px) {
+    gap: 135px;
+    }
+}
+
+  /* Lineas de fondo amarillas */
+
+.yellowline{
+    width: 100%;
+    height: 52px;
+    background-color: #ffbd59;
+}
+
+  /* Contenedor individual de imagenes */
+
+.publicimg{
+    text-align: center;
+}
+
+  /* Imagenes */
+
+.publicimg img{
+    width: clamp(200px, 20vw, 330px);
+    height: auto;
+}
+
+  /* lorem . $ X00 */
+
+.publicimg p{
+    font-size: clamp(16px, 5vw, 36px);
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+  /* Contenedor de YOUR FASHION */
+
+#lastdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-align: center;
+}
+
+  /* YOUR FASHION */
+
+#lastdiv p:first-of-type span{
+    font-size: clamp(20px, 5vw, 52px);
+    color: #b88940;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+  /* lorem */
+
+#lastdiv p:nth-of-type(2){
+    font-size: clamp(16px, 3vw, 28px);
+    font-weight: 600;
+    margin-top: 5px;
+}

@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    background-color: #93b5c9;
+}
+
+footer{
+    width: 90%;
+    height: 200px;
+    background-color: #AB2849;
+    margin: 5px auto;
+}
+
+/* CLASES */
+
+.main{
+    width: 100%;
+    height: 300px;
+    background-color: #AB2849;
+}
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: transparent;
+    margin: 20px 0px;
+}
+
+.contenido{
+    position: absolute;
+    right: 0;
+    width: 80%;
+    height: 180px;
+    background-color: #AB2849;
+}
+
+.contenido:nth-child(1){top: 2%;}
+.contenido:nth-child(2){top: 27%;}
+.contenido:nth-child(3){top: 52%;}
+.contenido:nth-child(4){top: 77%;}
